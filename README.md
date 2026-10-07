@@ -102,7 +102,7 @@ The model can be trained with the following commands:
 ```bash
 export CUBLAS\_WORKSPACE\_CONFIG=":4096:8"
 
-CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist\_train.sh     ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py     2     --work-dir ./workdir
+CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist_train.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  2  --work-dir ./workdir
 ```
 
 ## Testing
@@ -112,13 +112,13 @@ After downloading the fine-tuned ADPA model weights, you can reproduce the resul
 ### Ekman-6
 
 ```bash
-CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist\_test.sh     ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py     /ADPA/Ekman-6.pth     2
+CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist_test.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  /ADPA/Ekman-6.pth  2
 ```
 
 ### eMotions
 
 ```bash
-CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist\_test.sh     ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py     /ADPA/eMotions.pth     2
+CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist_test.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  /ADPA/eMotions.pth  2
 ```
 
 ## Acknowledgements
