@@ -92,7 +92,7 @@ ADPA/mmaction2-main/mmaction/models/backbones/ADPA.py
 The configuration file is located at:
 
 ```text
-./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py
+./configs/recognition/uniformerv2/uniformerv2-base-p16-res224_clip_8xb32-u8_kinetics400-rgb.py
 ```
 
 Before training, please update the pretrained weight path and dataset path in the configuration file.
@@ -112,13 +112,13 @@ After downloading the fine-tuned ADPA model weights, you can reproduce the resul
 ### Ekman-6
 
 ```bash
-CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist_test.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  /ADPA/Ekman-6.pth  2
+CUDA_VISIBLE_DEVICES=0,1 bash ./tools/dist_test.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  /ADPA/Ekman-6.pth  2
 ```
 
 ### eMotions
 
 ```bash
-CUDA\_VISIBLE\_DEVICES=0,1 bash ./tools/dist_test.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  /ADPA/eMotions.pth  2
+CUDA_VISIBLE_DEVICES=0,1 bash ./tools/dist_test.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  /ADPA/eMotions.pth  2
 ```
 
 ## Acknowledgements
