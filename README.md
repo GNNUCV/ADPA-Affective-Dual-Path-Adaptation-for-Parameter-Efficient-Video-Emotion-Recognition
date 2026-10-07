@@ -100,7 +100,7 @@ Before training, please update the pretrained weight path and dataset path in th
 The model can be trained with the following commands:
 
 ```bash
-export CUBLAS\_WORKSPACE\_CONFIG=":4096:8"
+export CUBLAS_WORKSPACE_CONFIG=":4096:8"
 
 CUDA_VISIBLE_DEVICES=0,1 bash ./tools/dist_train.sh  ./configs/recognition/uniformerv2/uniformerv2-base-p16-res224\_clip\_8xb32-u8\_kinetics400-rgb.py  2  --work-dir ./workdir
 ```
